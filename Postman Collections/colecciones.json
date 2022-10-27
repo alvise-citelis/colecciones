@@ -28,13 +28,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url_base}}/hola/:id",
+					"raw": "{{url_base}}/hola/:id?urlParam=miraa",
 					"host": [
 						"{{url_base}}"
 					],
 					"path": [
 						"hola",
 						":id"
+					],
+					"query": [
+						{
+							"key": "urlParam",
+							"value": "miraa"
+						}
 					],
 					"variable": [
 						{
