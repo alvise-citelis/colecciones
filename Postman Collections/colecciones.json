@@ -39,7 +39,8 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "el valor cambia"
+							"value": "el valor cambia",
+							"description": " ahora tiene una descripción"
 						}
 					]
 				}
