@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "e418e153-e870-4a25-8bfa-838bbcc3dbc4",
+		"name": "Testeo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "demo",
+			"id": "127086e9-a5c1-4eec-977c-ede698059b8a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{url_base}}/hola"
+			},
+			"response": []
+		},
+		{
+			"name": "demo 2 renovado",
+			"id": "1e062aa0-2378-49da-ab35-64c60c475bdb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/hola/:id",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"hola",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "el valor cambia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "external appointment",
+			"id": "1f2c1b02-32d9-4076-ab75-0efb9443421d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:86/custom-appointment?sellerId=5819fcbb-ccb3-4111-8c66-c5e971298611&agentId=190a5762-bd6d-44b1-bb26-c8f48c4042e9&customerId=2e455cce-faaf-4435-bab0-23b70144875d&processKey=service",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"custom-appointment"
+					],
+					"query": [
+						{
+							"key": "sellerId",
+							"value": "5819fcbb-ccb3-4111-8c66-c5e971298611"
+						},
+						{
+							"key": "agentId",
+							"value": "190a5762-bd6d-44b1-bb26-c8f48c4042e9"
+						},
+						{
+							"key": "customerId",
+							"value": "2e455cce-faaf-4435-bab0-23b70144875d"
+						},
+						{
+							"key": "processKey",
+							"value": "service"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
